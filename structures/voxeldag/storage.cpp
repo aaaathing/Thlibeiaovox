@@ -761,3 +761,8 @@ namespace Cubiquity
 		}
 	}
 }
+
+typedef Cubiquity::Volume DAG;
+std::unique_ptr<DAG> new_dag() {
+  return std::unique_ptr<DAG>(new DAG());
+}

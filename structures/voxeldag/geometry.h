@@ -831,9 +831,9 @@ namespace Cubiquity
 	private:
 
 		std::minstd_rand eng;
-		std::uniform_real_distribution<> randX;
-		std::uniform_real_distribution<> randY;
-		std::uniform_real_distribution<> randZ;
+		std::uniform_real_distribution<float> randX;
+		std::uniform_real_distribution<float> randY;
+		std::uniform_real_distribution<float> randZ;
 	};
 
 	class Box3iSampler

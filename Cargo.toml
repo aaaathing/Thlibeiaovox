@@ -1,0 +1,14 @@
+[package]
+name = "thlibeiaovox"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "Thlibeiaovox"
+path = "main.rs"
+
+[build-dependencies]
+cxx-build = "1.0"
+
+[dependencies]
+cxx = "1.0"
