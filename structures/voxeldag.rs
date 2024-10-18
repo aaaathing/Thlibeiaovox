@@ -1,4 +1,4 @@
-#[cxx::bridge]
+/*#[cxx::bridge]
 mod ffi {
 	unsafe extern "C++" {
 		include!("thlibeiaovox/structures/voxeldag/storage.cpp");
@@ -12,6 +12,21 @@ mod ffi {
 type DAG = ffi::DAG;
 
 pub fn new_dag() -> cxx::UniquePtr<DAG> { ffi::new_dag() }
+*/
+
+use autocxx::prelude::*; // use all the main autocxx functions
+
+include_cpp! {
+	#include "voxeldag/storage.cpp"
+	safety!(unsafe)
+	generate!("Cubiquity::Volume")
+}
+
+pub use ffi::*;
+pub type DAG = ffi::Cubiquity::Volume;
+pub fn new_dag() -> UniquePtr<DAG> {
+	DAG::new().within_unique_ptr()
+}
 
 /*
 const Internals::NodeStore& nodeStore = Internals::getNodes(volume()).nodes();

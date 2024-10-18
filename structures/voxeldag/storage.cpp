@@ -10,6 +10,10 @@
 * You should have received a copy of the CC0 Public Domain Dedication along with this software.    *
 * If not, see http://creativecommons.org/publicdomain/zero/1.0/.                                   *
 ***************************************************************************************************/
+
+#pragma once
+#include "base.cpp"
+#include "geometry.cpp"
 #include "storage.h"
 
 #include <algorithm>
@@ -760,9 +764,4 @@ namespace Cubiquity
 			return volume.rootNodeIndex();
 		}
 	}
-}
-
-typedef Cubiquity::Volume DAG;
-std::unique_ptr<DAG> new_dag() {
-  return std::unique_ptr<DAG>(new DAG());
 }

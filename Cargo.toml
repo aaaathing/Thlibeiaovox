@@ -8,7 +8,9 @@ name = "Thlibeiaovox"
 path = "main.rs"
 
 [build-dependencies]
-cxx-build = "1.0"
+autocxx-build = "0.27.0"
+miette = { version = "5", features = ["fancy"] }
 
 [dependencies]
+autocxx = "0.27.0"
 cxx = "1.0"
