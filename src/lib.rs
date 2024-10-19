@@ -1,4 +1,4 @@
-mod structures;
+pub mod structures;
 
 use wasm_bindgen::prelude::*;
 

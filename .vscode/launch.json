@@ -11,7 +11,7 @@
 			"type": "node-terminal"
 		},
 		{
-			"command": "export PATH=\"/opt/homebrew/opt/llvm/bin:$PATH\"; export CXXFLAGS=' --sysroot=/Users/aaron/Downloads/wasi-sdk/share/wasi-sysroot -fexceptions''; cargo build --target=wasm32-wasip1 --release",
+			"command": "export PATH=\"/opt/homebrew/opt/llvm/bin:$PATH\"; export CXXFLAGS=' --sysroot=/Users/aaron/Downloads/wasi-sdk/share/wasi-sysroot -fexceptions'; cargo build --target=wasm32-wasip1 --release",
 			"name": "wasm release",
 			"request": "launch",
 			"type": "node-terminal"

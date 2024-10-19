@@ -4,11 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [lib]
-crate-type = ["cdylib", "rlib"]
+name = "thlibeiaovox_lib"
+crate-type = ["cdylib","rlib"]
+path = "src/lib.rs"
 
 [[bin]]
 name = "thlibeiaovox"
-path = "src/test.rs"
+path = "src/main.rs"
 
 [build-dependencies]
 autocxx-build = "0.27.0"

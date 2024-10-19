@@ -1,5 +1,6 @@
-// this file for testing
-mod structures;
+// this file for testin
+use thlibeiaovox_lib::structures;
+
 fn main(){
 	println!("stuff");
 	let mut thing = structures::voxeldag::new_dag();
