@@ -204,9 +204,7 @@ namespace Cubiquity
 			return index;
 		}
 
-		assert(false && "Out of space for unshared edits!");
-		log(ERR, "Out of space for unshared edits!");
-		exit(1);
+		throw std::runtime_error("Out of space for unshared edits!");
 		return 0; // Indicates error (we don't use this function to allocate the zeroth node).
 	}
 

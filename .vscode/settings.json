@@ -2,6 +2,8 @@
 	"C_Cpp.default.compilerPath": "/usr/bin/clang",
 	"files.associations": {
 		"type_traits": "cpp",
-		"cstring": "cpp"
+		"cstring": "cpp",
+		"algorithm": "cpp",
+		"iostream": "cpp"
 	}
 }

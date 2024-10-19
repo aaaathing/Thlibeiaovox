@@ -6,9 +6,9 @@ include_cpp! {
 	generate!("Cubiquity::Volume")
 }
 
-pub type DAG = ffi::Cubiquity::Volume;
-pub fn new_dag() -> UniquePtr<DAG> {
-	DAG::new().within_unique_ptr()
+pub type DAG = UniquePtr<ffi::Cubiquity::Volume>;
+pub fn new_dag() -> DAG {
+	ffi::Cubiquity::Volume::new().within_unique_ptr()
 }
 
 /*
