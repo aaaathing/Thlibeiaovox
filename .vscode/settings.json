@@ -4,6 +4,7 @@
 		"type_traits": "cpp",
 		"cstring": "cpp",
 		"algorithm": "cpp",
-		"iostream": "cpp"
+		"iostream": "cpp",
+		"limits": "cpp"
 	}
 }
