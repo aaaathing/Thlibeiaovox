@@ -1,0 +1,9 @@
+
+from https://github.com/ria8651/octree-tracer/blob/master/src/cpu_octree.rs
+get: octree.getNode(octree.find_voxel())
+set: octree.put_in_voxel()
+load:{
+create octree
+call octree::from_bin() with array of:
+{pointer: u32, value: Voxel}
+}
